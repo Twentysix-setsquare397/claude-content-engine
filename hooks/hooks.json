@@ -1,0 +1,28 @@
+{
+  "description": "Content quality gate - automatically reviews all written content for AI slop, cliches, weak copy, and low-effort patterns before showing it to the user.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/quality_gate.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/content_review.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
