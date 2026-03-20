@@ -1,0 +1,9 @@
+{
+  "name": "claude-content-engine",
+  "description": "A content creation engine for Claude Code. 8 specialized skills, persistent content memory, skill chaining, and an AI slop detector that runs on every output.",
+  "version": "2.0.0",
+  "author": {
+    "name": "claude-content-engine contributors"
+  },
+  "keywords": ["skills", "content", "creative", "writing", "marketing", "copywriting", "seo", "email", "social-media", "workflows"]
+}
